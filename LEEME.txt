@@ -1,0 +1,27 @@
+Creaciones Luna - catálogo web
+
+Archivos:
+- index.html: estructura de la página.
+- style.css: diseño y estilos.
+- script.js: productos, filtros y carrito.
+- assets/: logo y fotos de productos.
+
+Cómo abrir:
+1. Extraé la carpeta del ZIP.
+2. Abrí index.html con Chrome, Edge o Firefox.
+
+La página funciona localmente sin instalar nada. Para publicarla en internet más adelante, se puede subir a un hosting estático gratuito.
+
+Los productos se cargan desde script.js. Cada producto tiene nombre, categoría, precio e imagen.
+Las fotos del catálogo son recortes de los flyers que compartiste; algunas todavía conservan parte del diseño publicitario original. Cuando tengas fotos directas del producto, se pueden reemplazar para que el catálogo quede más limpio.
+
+Nota: el botón de continuar pedido es una demostración; todavía no está conectado a WhatsApp ni procesa pagos.
+
+
+ACTUALIZACIÓN: se usan los flyers completos originales, sin recortes.
+PEDIDOS POR WHATSAPP:
+1. Abrí script.js.
+2. Buscá WHATSAPP_NUMBER.
+3. Reemplazá 549XXXXXXXXXX por el número del negocio, sin +, espacios ni guiones.
+   En Argentina se usa 549 + código de área + número (sin 0 ni 15).
+4. Guardá el archivo. El botón del carrito genera el pedido con productos, cantidades y total y lo abre en WhatsApp.

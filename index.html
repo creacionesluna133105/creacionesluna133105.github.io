@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Creaciones Luna: librería, juguetería y artículos para crear, decorar y regalar.">
+  <title>Creaciones Luna | Librería y Juguetería</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">✨ ¡Todo lo que necesitás para crear, decorar y regalar! ✨</div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Creaciones Luna, inicio">
+      <img src="assets/logo.png" alt="Logo de Creaciones Luna">
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a class="active" href="#inicio">⌂ Inicio</a>
+      <a href="#categorias">▣ Categorías</a>
+      <a href="#productos">✦ Productos</a>
+      <a href="#ofertas">🏷 Ofertas</a>
+      <a href="#contacto">✉ Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchToggle" aria-label="Buscar">⌕</button>
+      <button class="cart-button" id="cartToggle" aria-label="Abrir carrito">🛒 <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">Librería · Juguetería · Regalos</span>
+        <h1>Todo lo que necesitás para <em>crear, decorar</em> y regalar</h1>
+        <p>Un mundo de colores, ideas y detalles para darle vida a todo lo que imaginás.</p>
+        <div class="hero-buttons">
+          <a class="button button-yellow" href="#productos">Ver productos <span>→</span></a>
+          <a class="text-link" href="#categorias">Explorar categorías</a>
+        </div>
+        <div class="hero-note">Calidad · Variedad · Los mejores precios</div>
+      </div>
+      <div class="hero-art" aria-label="Ilustración decorativa de útiles escolares">
+        <div class="spark spark-one">✦</div><div class="spark spark-two">✧</div>
+        <div class="pencil pencil-a"></div><div class="pencil pencil-b"></div><div class="pencil pencil-c"></div>
+        <div class="cup"><span>♥</span></div>
+        <div class="scissors">✂</div>
+        <div class="art-label">¡Dale vida<br>a tus ideas!</div>
+      </div>
+      <div class="hero-wave"></div>
+    </section>
+
+    <section class="section categories-section" id="categorias">
+      <div class="section-heading">
+        <span class="heading-rays">✳</span>
+        <h2>Nuestras categorías</h2>
+        <span class="heading-rays">✳</span>
+      </div>
+      <p class="section-subtitle">Encontrá eso que estabas buscando… ¡y un poquito más!</p>
+      <div class="category-grid">
+        <button class="category-card" data-category="Lápices"><span class="category-icon">✏️</span><strong>Lápices</strong></button>
+        <button class="category-card" data-category="Lapiceras"><span class="category-icon">🖊️</span><strong>Lapiceras</strong></button>
+        <button class="category-card" data-category="Cuadernos"><span class="category-icon">📒</span><strong>Cuadernos</strong></button>
+        <button class="category-card" data-category="Adhesivos"><span class="category-icon">🧴</span><strong>Adhesivos</strong></button>
+        <button class="category-card" data-category="Fibras"><span class="category-icon">🖍️</span><strong>Fibras</strong></button>
+        <button class="category-card" data-category="Juguetes"><span class="category-icon">🧸</span><strong>Juguetes</strong></button>
+        <button class="category-card" data-category="Papelería"><span class="category-icon">📄</span><strong>Papelería</strong></button>
+        <button class="category-card" data-category="Juguetes"><span class="category-icon">🧸</span><strong>Juguetes</strong></button>
+        <button class="category-card" data-category="Accesorios"><span class="category-icon">🎀</span><strong>Accesorios</strong></button>
+        <button class="category-card" data-category="Pilas"><span class="category-icon">🔋</span><strong>Pilas</strong></button>
+        <button class="category-card" data-category="Herramientas"><span class="category-icon">🧰</span><strong>Herramientas</strong></button>
+        <button class="category-card" data-category="Todos"><span class="category-icon plus">＋</span><strong>¡Y mucho más!</strong></button>
+      </div>
+    </section>
+
+    <section class="section products-section" id="productos">
+      <div class="section-heading">
+        <span class="heading-rays">✳</span>
+        <h2>Productos destacados</h2>
+        <span class="heading-rays">✳</span>
+      </div>
+      <div class="product-toolbar">
+        <p id="productIntro">Una selección para empezar a descubrir nuestra tienda.</p>
+        <div class="search-box" id="searchBox">
+          <input type="search" id="searchInput" placeholder="Buscar productos..." aria-label="Buscar productos">
+          <button id="searchButton" aria-label="Buscar">⌕</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="demo-note">Precios expresados en pesos argentinos. Las pilas se venden por unidad.</p>
+    </section>
+
+    <section class="promo-section" id="ofertas">
+      <div class="promo-spark">✦</div>
+      <div>
+        <span class="eyebrow light">¡No te lo pierdas!</span>
+        <h2>Ideas lindas,<br><em>precios geniales.</em></h2>
+        <p>Muy pronto vas a encontrar acá nuestras ofertas y novedades.</p>
+      </div>
+      <a class="button button-yellow" href="#contacto">Consultanos <span>→</span></a>
+    </section>
+
+    <section class="section about-section">
+      <div class="about-badge">♥</div>
+      <div>
+        <span class="eyebrow">Un lugar para imaginar</span>
+        <h2>Pequeñas cosas que inspiran <em>grandes ideas.</em></h2>
+        <p>En Creaciones Luna creemos que cada lápiz, cada color y cada regalo puede convertirse en algo especial.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <div class="footer-wave"></div>
+    <div class="footer-content">
+      <img src="assets/logo.png" alt="Creaciones Luna" class="footer-logo">
+      <p>Dale vida a tus ideas</p>
+      <div class="footer-links">
+        <a href="#inicio">Inicio</a><a href="#productos">Productos</a><a href="#contacto">Contacto</a>
+      </div>
+      <small>© <span id="year"></span> Creaciones Luna · Librería y Juguetería</small>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="cart-head"><h2>Tu carrito <span>♥</span></h2><button id="cartClose" aria-label="Cerrar carrito">×</button></div>
+    <div class="cart-items" id="cartItems"><p class="empty-cart">Todavía no agregaste productos.</p></div>
+    <div class="cart-bottom">
+      <div class="cart-total"><span>Total estimado</span><strong id="cartTotal">$0</strong></div>
+      <button class="button button-purple checkout-button" id="checkoutButton">Continuar pedido</button>
+      <small>El pedido todavía no se envía ni se cobra.</small>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
